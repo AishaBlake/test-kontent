@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "name": "@kentico/gatsby-starter-kontent-lumen",
+  "description": "Simple starter blogpost portfolio page for Gatsby and Kontent headless CMS.",
+  "repository": "git+https://github.com/kentico/gatsby-starter-kontent-lumen",
+  "author": "Martin Makarsky <martinmakarsky@gmail.com> (https://github.com/makma)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepare": "node scripts/ncp.js .env.template .env -u",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write './*.js' 'src/**/*.js' 'src/**/*.jsx'",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "keywords": [
+    "gatsby",
+    "blog",
+    "starter",
+    "kontent",
+    "headless CMS",
+    "CMS"
+  ],
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@kentico/gatsby-source-kontent": "6.0.0",
+    "babel-eslint": "^8.2.1",
+    "bluebird": "^3.5.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "gatsby": "^2.20.36",
+    "gatsby-cli": "^2.11.22",
+    "gatsby-plugin-catch-links": "^2.0.4",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-google-fonts": "latest",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sitemap": "^2.0.1",
+    "lodash": "^4.17.4",
+    "lost": "^8.2.0",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "postcss-pxtorem": "^4.0.1",
+    "prettier": "^1.10.2",
+    "prismjs": "^1.15.0"
+  }
+}

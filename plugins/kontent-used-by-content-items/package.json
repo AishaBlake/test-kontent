@@ -1,0 +1,7 @@
+{
+  "name": "kontent-used-by-content-items",
+  "version": "1.0.0",
+  "description": "Make a reverse-link among kontent items linked using linked element link",
+  "main": "gatsby-node.js",
+  "license": "MIT"
+}

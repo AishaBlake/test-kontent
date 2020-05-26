@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  command = "gatsby build"
+[context.production]
+  environment ={  KONTENT_PROJECT_ID = "00676a8d-358c-0084-f2f2-33ed466c480a", KONTENT_LANGUAGE_CODENAMES = "en-US, cs-CZ" }
+[build.environment]
+  YARN_VERSION = "1.3.2"
+  YARN_FLAGS = "--no-ignore-optional"
