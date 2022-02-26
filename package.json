@@ -55,6 +55,6 @@
     "node-sass": "^4.14.1",
     "postcss-pxtorem": "^4.0.1",
     "prettier": "^1.10.2",
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.27.0"
   }
 }
